@@ -8,14 +8,21 @@ import os
 
 models = [
     "None",
-    "isnet-general-use",
     "u2net",
     "u2netp",
     "u2net_human_seg",
     "u2net_cloth_seg",
     "silueta",
-    "isnet-general-use",
+    "isnet-general",
     "isnet-anime",
+    "sam",
+    "birefnet-general",
+    "birefnet-general",
+    "birefnet-portrait",
+    "birefnet-dis",
+    "birefnet-hrsod",
+    "birefnet-cod",
+    "birefnet-massive"
 ]
 
 class ScriptPostprocessingUpscale(scripts_postprocessing.ScriptPostprocessing):
@@ -72,3 +79,4 @@ class ScriptPostprocessingUpscale(scripts_postprocessing.ScriptPostprocessing):
         )
 
         pp.info["Rembg"] = model
+
